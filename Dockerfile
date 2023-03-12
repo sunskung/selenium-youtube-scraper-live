@@ -9,3 +9,5 @@ RUN npm install
 COPY . .
 
 ENV PORT=8080
+
+CMD [ "npm", "start" ]
