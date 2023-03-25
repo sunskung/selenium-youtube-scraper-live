@@ -1,4 +1,6 @@
 # pip install requests
-# import requests
+import requests
 
 requests.get("https://randomuser.me/api/")
+
+print('dog')
