@@ -9,14 +9,17 @@ import requests
 
 # response = requests.get("https://api.thedogapi.com/")
 # print(response.text)
+# print(response.headers)
+# print(response.status_code)
 
-response = requests.get("https://api.thedogapi.com/v1/breeds")
-# print(response.text)
-# print(response.text)
-# print(response.text)
-# print(response.text)
-# print(response.text)
-# print(response.text)
-# print(response.text)
-# print(response.text)
-# print(response.text)
+###################################
+
+# response = requests.get("https://api.thedogapi.com/v1/breeds")
+# request = response.request
+# print(request.url)
+# print(request.path_url)
+# print(request.method)
+# print(request.headers)
+
+response = requests.get("http://placegoat.com/200/200")
+print(response.headers.get("Content-Type"))
