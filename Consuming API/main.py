@@ -21,5 +21,9 @@ import requests
 # print(request.method)
 # print(request.headers)
 
-response = requests.get("http://placegoat.com/200/200")
-print(response.headers.get("Content-Type"))
+# response = requests.get("http://placegoat.com/200/200")
+# print(response.headers.get("Content-Type"))
+
+headers = {"X-Request-Id": "<my-request-id>"}
+response = requests.get("https://example.org", headers=headers)
+print(response.request.headers)
